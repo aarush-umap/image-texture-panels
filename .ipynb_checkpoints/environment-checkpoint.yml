@@ -1,0 +1,17 @@
+# Run command conda env create -f environment.yml to install all necessary packages
+# Push environment to JupyterLab with: python -m ipykernel install --user --name image-texture-panels --display-name "Python3.11 (image-texture-panels)"
+
+name: image-texture-panels
+channels:
+    - conda-forge
+    - defaults
+dependencies:
+    - python=3.11
+    - jupyterlab
+    - panel
+    - scikit-image
+    - matplotlib
+    - pip
+    - pip:
+        - pycromanager
+    
